@@ -3,45 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A basic GitHub Page">
-    <title>My GitHub Page</title>
+    <meta name="description" content="Arias Smoke Shop - Vapes, CBD, Wraps & More">
+    <title>Arias Smoke Shop</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
+            background-color: #2f2f2f;
             color: #fff;
-            padding: 1rem 0;
+            text-align: center;
         }
+
+        header {
+            padding: 2rem 1rem;
+        }
+
         header h1 {
+            font-size: 3rem;
+            color: #f5b5cb;
             margin: 0;
         }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            margin-top: 2rem;
-            background: #333;
+
+        header p {
+            font-size: 1.5rem;
             color: #fff;
+            margin: 0.5rem 0 0;
+        }
+
+        main {
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .visit-us {
+            background: #444;
+            padding: 1.5rem;
+            border: 2px solid #f5b5cb;
+            text-align: left;
+        }
+
+        .visit-us h2 {
+            font-size: 2rem;
+            color: #f5b5cb;
+            margin: 0 0 1rem;
+        }
+
+        .visit-us p {
+            margin: 0.5rem 0;
+            line-height: 1.5;
+        }
+
+        .visit-us .icon {
+            margin-right: 0.5rem;
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        footer {
+            background: #333;
             padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #f5b5cb;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My GitHub Page</h1>
+        <h1>Arias Smoke Shop</h1>
+        <p>Vapes, CBD, Wraps & More</p>
     </header>
     <main>
-        <p>This is a simple webpage hosted on GitHub Pages.</p>
-        <p>You can customize this page by editing the <code>index.html</code> file in your repository.</p>
+        <div class="visit-us">
+            <h2>Come Visit Us</h2>
+            <p>1010 Broadway Suite 2<br>Chula Vista, CA</p>
+            <p>
+                <span class="icon">📞</span> (619)-591-8206
+            </p>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d0!2d0!3d0!4m5!3m4!1s0x0:0x0!8m2!3d32.623828!4d-117.088671" 
+                allowfullscreen
+                loading="lazy">
+            </iframe>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2025 Your Name</p>
+        <p>Arias Smoke Shop | 1010 Broadway Suite 2, Chula Vista, CA</p>
+        <p>
+            <a href="http://www.AriasSmokeandVape.com" target="_blank">www.AriasSmokeandVape.com</a>
+            | 📞 (619)-591-8206
+        </p>
     </footer>
 </body>
 </html>
